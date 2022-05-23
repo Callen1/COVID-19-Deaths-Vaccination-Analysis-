@@ -104,7 +104,7 @@ JOIN DataProject1..COVIDVaccinations vac --joins the two tables
 WHERE dea.continent IS NOT NULL --all columns must have new table alias before it
 ORDER BY 2,3
 
---USE CTE
+--USE CTE (Create table)
 
 WITH PopVsVac (Continent, Location, Date, Population, New_vaccinations, RollingPeopleVaccinated)
 AS
@@ -132,7 +132,7 @@ SELECT
 FROM PopVsVac
 
 
---USE TEMP TABLE
+--USE TEMP TABLE (Create table)
 
 --DROP Table if exists #PercentagePopulationVaccinated --add when making alterations
 CREATE Table #PercentagePopulationVaccinated
